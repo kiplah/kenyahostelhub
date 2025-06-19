@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Hostel, Booking, Message
+from .models import Hostel, Booking, Message, Favorite, Notification
 
 class HostelSerializer(serializers.ModelSerializer):
     class Meta:
@@ -21,3 +21,15 @@ class MessageSerializer(serializers.ModelSerializer):
         model = Message
         fields = '__all__'
         read_only_fields = ['sender', 'timestamp', 'is_read']  
+
+class FavoriteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Favorite
+        fields = '__all__'
+        read_only_fields = ['user', 'created_at']
+
+class NotificationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Notification
+        fields = '__all__'
+        read_only_fields = ['user', 'timestamp']
