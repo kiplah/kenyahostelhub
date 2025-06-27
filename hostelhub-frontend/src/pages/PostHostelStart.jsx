@@ -1,6 +1,6 @@
 // src/pages/PostHostelStart.js
 import { useNavigate } from "react-router-dom";
-
+import Footer from "../components/Footer";
 export default function PostHostelStart() {
   const navigate = useNavigate();
 
@@ -24,6 +24,8 @@ export default function PostHostelStart() {
           Register
         </button>
       </div>
+      <Footer />
     </div>
+    
   );
 }

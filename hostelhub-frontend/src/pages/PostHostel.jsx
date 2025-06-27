@@ -4,6 +4,7 @@ import { toast, ToastContainer } from "react-toastify";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import "react-toastify/dist/ReactToastify.css";
 import API from "../services/api";
+import Footer from "../components/Footer";
 
 export default function PostHostelForm() {
   const navigate = useNavigate();
@@ -191,6 +192,8 @@ export default function PostHostelForm() {
           {loading ? "Posting..." : "Post Hostel"}
         </button>
       </form>
+      
+      <Footer/>
     </div>
   );
 }

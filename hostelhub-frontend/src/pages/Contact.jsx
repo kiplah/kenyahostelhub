@@ -27,7 +27,7 @@ export default function Contact() {
               <Phone className="mx-auto mb-2 text-orange-500" size={32} />
               <h4 className="font-bold">Call Us</h4>
               <p className="text-sm text-gray-600 mt-2">+254 700 000 000</p>
-              <a href="tel:+254700000000" className="text-blue-600 text-sm mt-2 inline-block">Call Now →</a>
+              <a href="tel:+254703924936" className="text-blue-600 text-sm mt-2 inline-block">Call Now →</a>
             </div>
             <div className="bg-white shadow rounded p-6">
               <Mail className="mx-auto mb-2 text-orange-500" size={32} />
